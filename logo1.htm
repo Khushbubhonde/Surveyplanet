@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" vocab="https://schema.org/">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/images/limesurvey/favicon/limesurvey_favicon_96.png">
+        <link rel="apple-touch-icon" href="/images/limesurvey/favicon/limesurvey_apple_touch_icon.png">
+        <meta charset="utf-8" />
+	<base href="https://www.limesurvey.org/privacy-policy" />
+	<meta name="keywords" content="Data, Protection Policy, Privacy policy" />
+	<meta name="author" content="Carsten Schmitz" />
+	<meta name="description" content="Data Protection Policy" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<title>Privacy policy - LimeSurvey - Easy online survey tool</title>
+	<link href="https://www.limesurvey.org/de/datenschutzhinweise" rel="alternate" hreflang="de-DE" />
+	<link href="https://www.limesurvey.org/privacy-policy" rel="alternate" hreflang="en-US" />
+	<link href="https://www.limesurvey.org/es/declaracion-de-proteccion-de-datos" rel="alternate" hreflang="es-ES" />
+	<link href="https://www.limesurvey.org/fr/politique-de-confidentialite" rel="alternate" hreflang="fr-FR" />
+	<link href="https://www.limesurvey.org/pt/declaracao-de-privacidade" rel="alternate" hreflang="pt-PT" />
+	<link href="/plugins/system/jce/css/content.css?aa754b1f19c7df490be4b958cf085e7c" rel="stylesheet" />
+	<link href="/templates/yootheme/css/theme.9.css?1653485264" rel="stylesheet" />
+	<script src="/media/jui/js/jquery.min.js?c15692a1a2790acd1adbaadc2e6b844a"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?c15692a1a2790acd1adbaadc2e6b844a"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?c15692a1a2790acd1adbaadc2e6b844a"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit.min.js?2.7.22"></script>
+	<script src="/templates/yootheme/vendor/assets/uikit/dist/js/uikit-icons-horizon.min.js?2.7.22"></script>
+	<script src="/templates/yootheme/js/theme.js?2.7.22"></script>
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+            Array.prototype.slice.call(document.querySelectorAll('a span[id^="cloak"]')).forEach(function(span) {
+                span.innerText = span.textContent;
+            });
+        });
+	</script>
+	<link href="https://www.limesurvey.org/privacy-policy" rel="alternate" hreflang="x-default" />
+	<script>// Zoho MarketingHub
+var w = window;
+var p = w.location.protocol;
+if (p.indexOf("http") < 0) {
+    p = "http" + ":";
+}
+var d = document;
+var f = d.getElementsByTagName('script')[0], s = d.createElement('script');
+s.type = 'text/javascript';
+s.async = false;
+if (s.readyState) {
+    s.onreadystatechange = function () {
+        if (s.readyState == "loaded" || s.readyState == "complete") {
+            s.onreadystatechange = null;
+            try {
+                loadwaprops("235c8e8871e63997e414356dc1c509cda", "2317adc1fc1ab298a923f9324031ab5e2", "2c0c7cdbb3efaa1137e56046213b7b00f1185630859ca1fd0", "2a54b94851eba700e82cc53117471e1a4", "0.0");
+            } catch (e) {
+            }
+        }
+    };
+} else {
+    s.onload = function () {
+        try {
+            loadwaprops("235c8e8871e63997e414356dc1c509cda", "2317adc1fc1ab298a923f9324031ab5e2", "2c0c7cdbb3efaa1137e56046213b7b00f1185630859ca1fd0", "2a54b94851eba700e82cc53117471e1a4", "0.0");
+        } catch (e) {
+        }
+    };
+}
+s.src = p + "//mh.zoho.eu/hub/js/WebsiteAutomation.js";
+f.parentNode.insertBefore(s, f);
+
+// global LimeSurvey object
+var LimeSurvey = LimeSurvey || {};
+LimeSurvey.globalVars = LimeSurvey.globalVars || {};
+LimeSurvey.globalVars.pageTitle = document.title;
+  	LimeSurvey.globalVars.domain = document.location.hostname;
+
+// manipulate href and replace placeholders. This is used for placeholders in Google Analytics tracking links.
+LimeSurvey.initHref = function($) {
+    // set data for every section
+    $('.uk-section').each(function(index) {
+        $(this).data('section', 'section-' + (index + 1));
+    });
+
+    // search for placeholders to be replaced
+    $(".ls-campaign").each(function(index) {
+        var element = $(this);
+        if (typeof element.attr('href') == "undefined") {
+            element = $('a', $(this));
+        }
+        
+        var href = decodeURI(element.attr('href'));
+        var text = element.text();
+        var content = element.closest('.uk-section').data('section');
+
+        href = href.replace(/\{[a-zA-Z]*\}/g, function (needle) {
+            switch (needle) {
+                case '{domain}': return encodeURI(LimeSurvey.globalVars.domain);
+                case '{pageTitle}': return encodeURI(LimeSurvey.globalVars.pageTitle);
+                case '{text}': return encodeURI(text.trim());
+                case '{content}': return content;
+            }
+          });
+
+        element.attr('href', href);
+    });
+}
+
+jQuery(function() {
+  LimeSurvey.initHref(jQuery);
+});
+
+
+// Google Tag Manager
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JXPSRP');
+
+//anchor offset 
+UIkit.mixin({
+    data: {
+        'offset': 185,
+    }
+}, 'scroll');
+
+function princingtableNext(){
+    if (jQuery(window).width() >= 960) {
+        UIkit.slider('#pricing').show('next');
+    } else {
+        jQuery([document.documentElement, document.body]).animate({
+            scrollTop: jQuery("#pricing .product-corporate").offset().top - 120
+        }, 100);
+    }
+    return false;
+}</script>
+	<script>var $theme = {};</script>
+
+    
+	<!-- Start TAGZ: -->
+	<meta name="twitter:card" content=""/>
+	<meta name="twitter:description" content="Here you can find the Data Protection Policy of LimeSurvey"/>
+	<meta name="twitter:image" content="https://www.limesurvey.org/images/limesurvey/logo_new_transparent.png"/>
+	<meta name="twitter:site" content=""/>
+	<meta name="twitter:title" content="DATA PROTECTION POLICY"/>
+	<meta property="fb:app_id" content=""/>
+	<meta property="og:description" content="Here you can find the Data Protection Policy of LimeSurvey"/>
+	<meta property="og:image" content="https://www.limesurvey.org/images/limesurvey/logo_new_transparent.png"/>
+	<meta property="og:image:height" content="754"/>
+	<meta property="og:image:width" content="716"/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:title" content="DATA PROTECTION POLICY"/>
+	<meta property="og:type" content=""/>
+	<meta property="og:url" content="https://limesurvey.org/privacy-policy"/>
+	<!-- End TAGZ -->
+
+</head>
+		
+    <body class="">
+
+                <div class="tm-page-container uk-clearfix">
+
+            
+            
+        
+        
+        <div class="tm-page uk-margin-auto">
+
+                        
+<div class="tm-header-mobile uk-hidden@m">
+
+
+    <div class="uk-navbar-container">
+        <nav uk-navbar="container: .tm-header-mobile">
+
+                        <div class="uk-navbar-left">
+
+                                    
+<a href="https://www.limesurvey.org/" class="uk-navbar-item uk-logo">
+    <img alt width="120" src="/images/limesurvey/svg/logo_limesurvey_head.svg"></a>
+                                    
+                
+                
+            </div>
+            
+            
+                        <div class="uk-navbar-right">
+
+                
+                                <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle>
+                                            <span class="uk-margin-small-right">Menu</span>
+                                        <div uk-navbar-toggle-icon></div>
+                </a>
+                
+                
+            </div>
+            
+        </nav>
+    </div>
+
+    
+
+<div id="tm-mobile" uk-offcanvas mode="reveal" overlay flip>
+    <div class="uk-offcanvas-bar">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+        
+            
+<div class="uk-child-width-1-1" uk-grid>    <div>
+<div class="uk-panel" id="module-143">
+
+    
+    <div class="" uk-grid>
+	<ul class="uk-list ">
+	<li class="item-172 uk-h5 deeper parent"><span class="">Solutions</span>
+<ul class="nav-child unstyled small"><li class="item-226"><a href="/solutions/market-research" class=" el-link uk-link-muted uk-margin-remove-last-child">Market Research</a></li><li class="item-175"><a href="/solutions/customer-survey" class=" el-link uk-link-muted uk-margin-remove-last-child">Customer Survey</a></li><li class="item-241"><a href="/solutions/universities" class=" el-link uk-link-muted uk-margin-remove-last-child">Universities</a></li><li class="item-242"><a href="/solutions/students" class=" el-link uk-link-muted uk-margin-remove-last-child">Students</a></li></ul></li><li class="item-243"><a href="/pricing" class=" el-link uk-link-muted uk-margin-remove-last-child">Pricing</a></li></ul><ul class="uk-list "><li class="item-244 uk-h5 deeper parent"><span class="">Support</span>
+<ul class="nav-child unstyled small"><li class="item-246"><a href="https://help.limesurvey.org/portal/en/home" class=" el-link uk-link-muted uk-margin-remove-last-child">Help Center</a></li><li class="item-247"><a href="https://forums.limesurvey.org" class=" el-link uk-link-muted uk-margin-remove-last-child">Forums</a></li><li class="item-248"><a href="/support/faq" class=" el-link uk-link-muted uk-margin-remove-last-child">FAQ</a></li><li class="item-249"><a href="https://account.limesurvey.org/customer-support" class=" el-link uk-link-muted uk-margin-remove-last-child">Support</a></li><li class="item-250"><a href="/support/contact" class=" el-link uk-link-muted uk-margin-remove-last-child">Contact</a></li><li class="item-344"><a href="https://www.limesurvey.com" class=" el-link uk-link-muted uk-margin-remove-last-child">Partners</a></li></ul></li><li class="item-251"><a href="https://account.limesurvey.org/login?utm_source={domain}&amp;utm_medium={pageTitle}&amp;utm_campaign=top-navigation&amp;utm_content=button_{text}" class="uk-button uk-button-default ls-campaign el-link uk-link-muted uk-margin-remove-last-child">Login</a></li><li class="item-252"><a href="https://account.limesurvey.org/sign-up?utm_source={domain}&amp;utm_medium={pageTitle}&amp;utm_campaign=top-navigation&amp;utm_content=button_{text}&amp;jrn=register&amp;step=1" class="uk-button uk-button-default uk-button-primary ls-campaign el-link uk-link-muted uk-margin-remove-last-child">Sign up for free</a></li>	</ul>
+</div>
+
+</div>
+</div></div>
+
+            
+    </div>
+</div>
+
+</div>
+
+
+<div class="tm-header uk-visible@m" uk-header>
+
+
+
+        <div uk-sticky media="@m" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+    
+        <div class="uk-navbar-container">
+
+            <div class="uk-container">
+                <nav class="uk-navbar" uk-navbar="{&quot;align&quot;:&quot;left&quot;,&quot;boundary&quot;:&quot;.tm-header .uk-navbar-container&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar-mode&quot;:&quot;slide&quot;}">
+
+                                        <div class="uk-navbar-left">
+
+                                                    
+<a href="https://www.limesurvey.org/" class="uk-navbar-item uk-logo">
+    <img alt width="156" height="auto" src="/images/limesurvey/svg/logo_limesurvey_head.svg"><img class="uk-logo-inverse" alt width="156" height="auto" src="/images/limesurvey/svg/logo_limesurvey_head.svg"></a>
+                                                    
+                        
+                    </div>
+                    
+                    
+                                        <div class="uk-navbar-right">
+
+                                                    
+<ul class="uk-navbar-nav" id="module-115">
+    
+	<li class="item-172 uk-parent"><a> Solutions</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;x&quot;,&quot;pos&quot;:&quot;bottom-left&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-226"><a href="/solutions/market-research"> Market Research</a></li>
+		<li class="item-175"><a href="/solutions/customer-survey"> Customer Survey</a></li>
+		<li class="item-241"><a href="/solutions/universities"> Universities</a></li>
+		<li class="item-242"><a href="/solutions/students"> Students</a></li></ul></div></div></div></li>
+	<li class="item-243"><a href="/pricing"> Pricing</a></li>
+	<li class="item-244 uk-parent"><a> Support</a>
+	<div class="uk-navbar-dropdown" uk-drop="{&quot;clsDrop&quot;:&quot;uk-navbar-dropdown&quot;,&quot;flip&quot;:&quot;x&quot;,&quot;pos&quot;:&quot;bottom-left&quot;,&quot;mode&quot;:&quot;hover&quot;,&quot;container&quot;:&quot;.tm-header &gt; [uk-sticky]&quot;}"><div class="uk-navbar-dropdown-grid uk-child-width-1-1" uk-grid><div><ul class="uk-nav uk-navbar-dropdown-nav">
+
+		<li class="item-246"><a href="https://help.limesurvey.org/portal/en/home"> Help Center</a></li>
+		<li class="item-247"><a href="https://forums.limesurvey.org"> Forums</a></li>
+		<li class="item-248"><a href="/support/faq"> FAQ</a></li>
+		<li class="item-249"><a href="https://account.limesurvey.org/customer-support"> Support</a></li>
+		<li class="item-250"><a href="/support/contact"> Contact</a></li>
+		<li class="item-344"><a href="https://www.limesurvey.com"> Partners</a></li></ul></div></div></div></li>
+	<li class="item-251"><a href="https://account.limesurvey.org/login?utm_source={domain}&amp;utm_medium={pageTitle}&amp;utm_campaign=top-navigation&amp;utm_content=button_{text}" class="uk-button uk-button-default ls-campaign"> Login</a></li>
+	<li class="item-252"><a href="https://account.limesurvey.org/sign-up?utm_source={domain}&amp;utm_medium={pageTitle}&amp;utm_campaign=top-navigation&amp;utm_content=button_{text}&amp;jrn=register&amp;step=1" class="uk-button uk-button-default uk-button-primary ls-campaign"> Sign up for free</a></li></ul>
+
+                        
+                        
+
+                    </div>
+                    
+                </nav>
+            </div>
+
+        </div>
+
+        </div>
+    
+
+
+
+
+
+</div>
+            
+            
+
+            
+            <div id="system-message-container" data-messages="[]">
+</div>
+
+            <!-- Builder #page -->
+<div class="uk-section-default uk-section">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    <div class="uk-panel uk-margin"><h1>Privacy policy</h1>
+<p>These explanations of our data protection concern the domains www.limesurvey.org, community.limesurvey.org, account.limesurvey.org, forums.limesurvey.org, store.limesurvey.org, bugs.limesurvey.org, translate.limesurvey.org and manual.limesurvey.org (hereinafter ‘websites’).</p>
+<p>Data protection is a top priority for us. We would like to inform you about how we process your data below. We therefore ask that you read the following information on data protection carefully.</p>
+<p> </p>
+<h2>1. Name and contact details of the controller responsible for processing and the company data protection officer</h2>
+<p> </p>
+<p>This data protection notice applies to data processed by:</p>
+<p>Data controller:</p>
+<p>LimeSurvey GmbH, survey service &amp; consultancy</p>
+<p>Papenreye 63, 22453 Hamburg</p>
+<p> </p>
+<p>Telephone: +49 40 22660066 (support not provided over the phone!)</p>
+<p>Email: <span id="cloakfcb918aaa359b009da4d2bc2e67aa518">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakfcb918aaa359b009da4d2bc2e67aa518').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyfcb918aaa359b009da4d2bc2e67aa518 = '&#105;nf&#111;' + '&#64;';
+				addyfcb918aaa359b009da4d2bc2e67aa518 = addyfcb918aaa359b009da4d2bc2e67aa518 + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';
+				var addy_textfcb918aaa359b009da4d2bc2e67aa518 = '&#105;nf&#111;' + '&#64;' + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';document.getElementById('cloakfcb918aaa359b009da4d2bc2e67aa518').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyfcb918aaa359b009da4d2bc2e67aa518 + '\'>'+addy_textfcb918aaa359b009da4d2bc2e67aa518+'<\/a>';
+		</script>, support: <span id="cloak21271b4f985f4b1b4d199d824bb04ede">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak21271b4f985f4b1b4d199d824bb04ede').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy21271b4f985f4b1b4d199d824bb04ede = 's&#117;pp&#111;rt' + '&#64;';
+				addy21271b4f985f4b1b4d199d824bb04ede = addy21271b4f985f4b1b4d199d824bb04ede + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';
+				var addy_text21271b4f985f4b1b4d199d824bb04ede = 's&#117;pp&#111;rt' + '&#64;' + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';document.getElementById('cloak21271b4f985f4b1b4d199d824bb04ede').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy21271b4f985f4b1b4d199d824bb04ede + '\'>'+addy_text21271b4f985f4b1b4d199d824bb04ede+'<\/a>';
+		</script></p>
+<p>Website: <a href="http://www.limesurvey.org">www.limesurvey.org</a></p>
+<p> </p>
+<p>The company data protection officer for LimeSurvey can be contacted via the above address, FAO: Herrn Jörg ter Beek, or at www.cortina-consult.com.</p>
+<h2> </h2>
+<h2>2. Collecting and storing personal data, as well as the type and purpose of data use</h2>
+<p> </p>
+<p><strong>When visiting our website</strong></p>
+<p>When accessing our website, information is automatically sent to our website’s server by the browser used on your end device. This information is temporarily stored in a ‘log file’. The following information is collected without any action on your part and stored until it is automatically deleted:</p>
+<ul>
+<li>anonymised (= truncated) IP address of the accessing machine;</li>
+<li>date and time of access;</li>
+<li>name and URL of the file retrieved;</li>
+<li>size of transferred data;</li>
+<li>whether or not the download was successful;</li>
+<li>website from which access is made (referrer URL); and</li>
+<li>browser used and, if applicable, your machine’s operating system and the name of your access provider.</li>
+<li>The specified data is processed by us for the following purposes:</li>
+<li>to ensure that a smooth connection is established with the website;</li>
+<li>to guarantee the convenient use of our website;</li>
+<li>to evaluate system security and stability; and</li>
+<li>for other administrative purposes.</li>
+</ul>
+<p>The legal basis for data processing is Article 6 (1) (f) of the GDPR. Our legitimate interests are based on the above-mentioned purposes for collecting data. We never use the data collected to draw conclusions about you as a person.</p>
+<p>We also use cookies and analysis services when you visit our website. You can find more information about this in points 3 and 4 of this privacy policy.</p>
+<p><strong> </strong></p>
+<p><strong>When subscribing to our newsletter </strong></p>
+<p>If you have given your explicit consent pursuant to Article 6 (1) (a) of the GDPR, we use your email address to regularly send you our newsletter. If you have provided further information within the scope of our online presence (e.g. first name, last name, company name, line of business, job title, etc.), we may use this data to send you a personalised newsletter and therefore to be able to display content relevant to you more accurately.</p>
+<p>You can unsubscribe at any time, for example by clicking on the link at the bottom of each newsletter. Alternatively, you can send your unsubscribe request by email to <span id="cloak907d9dbd2883a0f5e846bb01134ad988">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloak907d9dbd2883a0f5e846bb01134ad988').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy907d9dbd2883a0f5e846bb01134ad988 = '&#105;nf&#111;' + '&#64;';
+				addy907d9dbd2883a0f5e846bb01134ad988 = addy907d9dbd2883a0f5e846bb01134ad988 + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';
+				var addy_text907d9dbd2883a0f5e846bb01134ad988 = '&#105;nf&#111;' + '&#64;' + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';document.getElementById('cloak907d9dbd2883a0f5e846bb01134ad988').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy907d9dbd2883a0f5e846bb01134ad988 + '\'>'+addy_text907d9dbd2883a0f5e846bb01134ad988+'<\/a>';
+		</script> at any time.</p>
+<p>We use services provided by ZOHO CORPORATION B. V. to send our newsletter (see point 3).</p>
+<p> </p>
+<p><strong>When using our contact form </strong></p>
+<p>If you have any questions, you have the option of contacting us via the form on the website. A valid email address, and a first name and last name is required to do so, so that we know who the request has come from and are able to respond. Further information can be provided on a voluntary basis.</p>
+<p>Data processing for the purposes of you contacting us takes place on the basis of Article 6 (1) (a) of the GDPR if your voluntary consent has been given.</p>
+<p>The personal data we collect when you use the contact form is erased once your request has been resolved.</p>
+<p>We use services provided by ZOHO CORPORATION B. V. to save and respond to your request (see point 3).</p>
+<h2> </h2>
+<h2>3. Sharing data</h2>
+<p> </p>
+<p>Your personal data is not shared with third parties for purposes other than those listed below.</p>
+<p>We only share your personal data with third parties if:</p>
+<ul>
+<li>you explicitly consent to this under Article 6 (1) (a) of the GDPR;</li>
+<li>data must be shared pursuant to Article 6 (1) (f) of the GDPR in order to assert, exercise or defend legal claims and there is no reason to assume that you have an overriding legitimate interest in your data not being shared with third parties;</li>
+<li>if there is a legal obligation to share it pursuant to Article 6 (1) (c) of the GDPR; and</li>
+<li>if this is legally permissible and required in order to process contractual relationships pursuant to Article 6 (1) (b) of the GDPR.</li>
+</ul>
+<p><strong> </strong></p>
+<p><strong>3.1   ZOHO CORPORATION B. V.</strong></p>
+<p>We will process and maintain personal data you have provided to us by making a contact request (via the website, by email, phone, fax or in person), through a newsletter subscription or direct business relationships using a customer relationship management system (CRM system).</p>
+<p>We use ZOHO CORPORATION B. V. (Hoogoorddreef 15, 1101 BA, Amsterdam, The Netherlands) services for this purpose. Zoho Corporation Pvt. Ltd. (Estancia IT Park, Plot No. 140 &amp; 151, GST Road, Vallancherry Village, Chengalpattu Taluk, Kanchipuram District 603 202, India) is involved in the provision of Zoho. Please note that there is not an appropriate level of data protection in India as a third country and there is no EU Commission adequacy decision, however Zoho Corporation Pvt. Ltd has provided sufficient assurances to ensure an adequate level of data protection. Specifically, we have concluded a commissioned processing contract with ZOHO CORPORATION B. V. and Zoho Corporation Pvt. Ltd based on the EU standard contractual clauses on commissioned processing in third countries. Details on data protection at Zoho and settings options to protect your personal data can be found in Zoho’s privacy policy: <a href="https://www.zoho.eu/privacy.html">https://www.zoho.eu/privacy.html</a>.</p>
+<p>We use the following ZOHO CORPORATION B. V. services:</p>
+<ul>
+<li>ZOHO CRM</li>
+</ul>
+<p>Purpose: Maintaining customer data</p>
+<p>Data transmission for: (1) Using our contact form, (2) using our registration form</p>
+<p>Data exchange: Data is exchanged with ZOHO SalesIQ, ZOHO Campaigns, ZOHO Flow and ZOHO Desk</p>
+<p> </p>
+<ul>
+<li>ZOHO Campaigns</li>
+</ul>
+<p>Purpose: Email marketing</p>
+<p>Data transmission for: (1) Subscribing to our newsletter</p>
+<p>Data exchange: Data is exchanged with ZOHO SalesIQ, ZOHO CRM, ZOHO Flow and ZOHO Desk</p>
+<p> </p>
+<ul>
+<li>ZOHO Flow</li>
+</ul>
+<p>Purpose: Further data processing service</p>
+<p>Data transmission for: (1) Using our contact form, (2) using our registration form, (3) subscribing to our newsletter</p>
+<p>Data exchange: Data is exchanged with ZOHO SalesIQ, ZOHO CRM, ZOHO Campaigns and ZOHO Desk</p>
+<p> </p>
+<ul>
+<li>ZOHO SalesIQ</li>
+</ul>
+<p>Purpose: Customer service chat</p>
+<p>Data transmission for: (1) Using the chat feature on our websites</p>
+<p>Data exchange: Data is exchanged with ZOHO CRM, ZOHO Campaigns, ZOHO Flow and ZOHO Desk</p>
+<p><strong> </strong></p>
+<p><strong>3.2   Web analysis/tracking providers for which consent is required</strong></p>
+<p>If you have given your consent to the use of cookies for statistical purposes, the following essential services are used to optimise our website, thus ensuring the best possible user experience. To do so, anonymised user data is collected via the respective service when visiting our website. The services specified below use ‘cookies’ which allow your user behaviour to be analysed. You can prevent this ‘tracking’ by changing your browser settings or by rejecting consent to cookies.</p>
+<p>We exclusively store this data for the specified purposes. IP addresses have been truncated by removing the last few digits to guarantee anonymity.</p>
+<p><strong>Google Ireland Limited services</strong></p>
+<p><strong>Google Analytics</strong></p>
+<p>Purpose: Google Analytics allows us to collect statistics concerning website visitors.</p>
+<p><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p> </p>
+<p><strong>Google Optimize</strong></p>
+<p>Purpose: Google Optimize allows us to dynamically display content (e.g. for A/B tests) based on visitors’ IP addresses and the website’s user behaviour.</p>
+<p><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<p> </p>
+<p><strong>ZOHO CORPORATION B. V. services</strong></p>
+<p><strong>PageSense</strong></p>
+<p>Purpose: PageSense allows us to check the general use of our website through a heat map and to display important content to you in the right place on individual websites as a result. We can also anonymously record the progression of individual sessions to get an understanding of how visitors use our website. PageSense also allows us to dynamically display content (e.g. for A/B tests) based on visitors’ IP addresses and the website’s user behaviour.</p>
+<p><a href="https://www.zoho.eu/privacy.html">https://www.zoho.eu/privacy.html</a>, <a href="https://www.zoho.com/pagesense/cookie-policy.html">https://www.zoho.com/pagesense/cookie-policy.html</a></p>
+<p><strong> </strong></p>
+<p><strong>SalesIQ</strong></p>
+<p>Purpose: SalesIQ allows us to integrate a chat feature into our website. SalesIQ records user behaviour on our websites in order to provide our customer service representatives with precise information about your concerns when using the chat feature.</p>
+<p><a href="https://www.zoho.eu/privacy.html">https://www.zoho.eu/privacy.html</a>, <a href="https://www.zoho.com/salesiq/cookies-policy.html">https://www.zoho.com/salesiq/cookies-policy.html</a></p>
+<p> </p>
+<p><strong>3.3   Marketing providers for which consent is required</strong></p>
+<p>We do not currently integrate any external marketing providers. The Google Analytics ‘Target audience for remarketing’ feature is disabled.</p>
+<p><strong> </strong></p>
+<p><strong>3.4   Google Tag Manager</strong></p>
+<p>Our websites use Google Tag Manager. Google Tag Manager is a solution that can be used to manage, control and download any type of website content (HTML, CSS, Javascript). Google Tag Manager itself is loaded via a cookie-free domain and does not collect any personal data. If content is downloaded via Google Tag Manager which collects data, Tag Manager does not access this data.</p>
+<p> </p>
+<h2>4. Cookies</h2></div><div><script id="CookieDeclaration" src="https://consent.cookiebot.com/e29b0344-09c9-4b4f-9341-4de21f94e4e4/cd.js" type="text/javascript" data-culture="EN" async></script></div><div class="uk-panel uk-margin"><h2> </h2>
+<h2>5. Data subject rights</h2>
+<p> </p>
+<p>You have the right:</p>
+<ul>
+<li>to request information about your personal data that is processed by us, pursuant to Article 15 of the GDPR. In particular, you can request information about the purposes of processing, the category of personal data, the categories of recipients to whom the data has been or is being disclosed, the intended storage period, the existence of a right to rectification, erasure, restriction of processing or objection, the existence of a right to lodge a complaint, the origin of your data if it was not collected by us, and the existence of automated decision-making including profiling and meaningful information about the details of this, where applicable;</li>
+<li>to request that incorrect or incomplete personal data stored by us is immediately rectified pursuant to Article 16 of the GDPR;</li>
+<li>to request that your personal data stored by us is erased pursuant to Article 17 of the GDPR, provided that processing is not required to exercise the right to free expression of opinion and information, to fulfil a legal obligation, for reasons in the public interest or to assert, exercise or defend legal claims;</li>
+<li>to request that the processing of your personal data is restricted pursuant to Article 18 of the GDPR, if the accuracy of the data is disputed by you or processing is unlawful, and you have objected to such data being erased and we no longer require the data, but you require it to assert, exercise or defend legal claims, or you have objected to processing pursuant to Article 21 of the GDPR;</li>
+<li>to request that you receive the personal data concerning you, which you have provided us, in a structured, commonly used and machine-readable format or is transmitted to another controller, pursuant to Article 20 of the GDPR; and</li>
+<li>to withdraw the consent you have previously given at any time pursuant to Article 7 (3) of the GDPR. This results in us no longer being able to process data on which this consent is based in the future; and</li>
+<li>to complain to a supervisory authority in accordance with Article 77 of the GDPR. Generally, you can contact the supervisory authority where you have your usual place of residence or place of work or where our law firm’s office is based.</li>
+</ul>
+<h2> </h2>
+<h2>6. Right to object</h2>
+<p> </p>
+<p>If your personal data is processed on the basis of legitimate interests pursuant to Article 6 (1) (f) of the GDPR, you have the right to object against your personal data being processed pursuant to Article 21 of the GDPR, provided that there are reasons that relate to your particular situation or provided that the objection is against direct marketing. If the latter applies, you have the general right to object, which is processed by us without having received details concerning a particular situation.</p>
+<p>If you would like to assert your right of withdrawal or your right to object, please simply send an email to <span id="cloakb06215e4f07d71fd4ce4c7fe22b0085b">This email address is being protected from spambots. You need JavaScript enabled to view it.</span><script type='text/javascript'>
+				document.getElementById('cloakb06215e4f07d71fd4ce4c7fe22b0085b').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyb06215e4f07d71fd4ce4c7fe22b0085b = '&#105;nf&#111;' + '&#64;';
+				addyb06215e4f07d71fd4ce4c7fe22b0085b = addyb06215e4f07d71fd4ce4c7fe22b0085b + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';
+				var addy_textb06215e4f07d71fd4ce4c7fe22b0085b = '&#105;nf&#111;' + '&#64;' + 'l&#105;m&#101;s&#117;rv&#101;y' + '&#46;' + '&#111;rg';document.getElementById('cloakb06215e4f07d71fd4ce4c7fe22b0085b').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyb06215e4f07d71fd4ce4c7fe22b0085b + '\'>'+addy_textb06215e4f07d71fd4ce4c7fe22b0085b+'<\/a>';
+		</script>.</p>
+<p> </p>
+<h2>7. Data security</h2>
+<p> </p>
+<p>Within the scope of you visiting our website, we use the commonly-used SSL process (secure socket layer) together with the respective maximum level of encryption supported by your browser. This is generally 256-bit encryption. If your browser does not support 256-bit encryption, we will use 128-bit v3 technology instead. You can tell whether individual pages of our website are being transmitted in an encrypted way if a key or padlock symbol is shown in your browser’s lower status bar.</p>
+<p>We also take appropriate technical and organisational security measures to protect your data from any accidental or intentional manipulation, partial or total loss, destruction or unauthorised access by third parties. If personal data is collected and processed, information is transferred in an encrypted way in order to prevent data being misused by third parties. Our security measures are continually improved in line with technological developments.</p>
+<h2> </h2>
+<h2>8. Updating and changing this privacy policy</h2>
+<p> </p>
+<p>This privacy policy is currently valid and is dated 07 August 2020.</p>
+<p>If we further develop our website and services, or if there is a change in legal or official guidelines, it may be necessary to change this privacy policy. You can access and print out the latest privacy policy from the website at any time.</p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+
+            
+            
+<div id="module-111" class="builder"><!-- Builder #module-111 -->
+<div class="uk-section-default uk-section uk-section-large uk-padding-remove-bottom" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-fade; delay: false;">
+    
+        
+        
+        
+            
+                                <div class="uk-container">                
+                    
+                    <div class="tm-grid-expand uk-grid-large uk-margin-large" uk-grid>
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin" uk-scrollspy-class>
+        <a class="el-link" href="/index.php"><img width="150" class="el-image" alt data-src="/images/limesurvey/svg/logo_limesurvey_footer.svg" uk-img></a>    
+    
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-2@s uk-width-1-5@m">
+    
+        
+            
+            
+                
+                    
+<div class="uk-h5" uk-scrollspy-class>        Languages    </div>
+<div class="uk-panel" uk-scrollspy-class>
+    
+    
+<div class="uk-panel mod-languages">
+
+    
+    
+        <ul class="uk-list">
+                                            <li class="el-item">
+                    <a href="/de/datenschutzhinweise" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                                    Deutsch                                            </a>
+                </li>
+                                                            <li class="el-item uk-active">
+                    <a href="https://www.limesurvey.org/privacy-policy" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                                    English                                            </a>
+                </li>
+                                                            <li class="el-item">
+                    <a href="/es/declaracion-de-proteccion-de-datos" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                                    Español                                            </a>
+                </li>
+                                                            <li class="el-item">
+                    <a href="/fr/politique-de-confidentialite" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                                    Français                                            </a>
+                </li>
+                                                            <li class="el-item">
+                    <a href="/pt/declaracao-de-privacidade" class="el-link uk-link-muted uk-margin-remove-last-child">
+                                                    Português                                            </a>
+                </li>
+                                    </ul>
+
+    
+    
+</div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+
+<div class="uk-width-1-1@s uk-width-3-5@m">
+    
+        
+            
+            
+                
+                    
+<div class="uk-panel uk-grid-large" uk-scrollspy-class>
+    
+    <div class="uk-grid-large" uk-grid>
+	<ul class="uk-list uk-width-1-3@s">
+	<li class="item-280 uk-h5"><span class="">Legal</span>
+</li><li class="item-281"><a href="/terms-conditions" class=" el-link uk-link-muted uk-margin-remove-last-child">Terms &amp; Conditions</a></li><li class="item-282"><a href="/legal-notice" class=" el-link uk-link-muted uk-margin-remove-last-child">Legal notice</a></li><li class="item-284 current active"><a href="/privacy-policy" class=" el-link uk-link-muted uk-margin-remove-last-child">Privacy policy</a></li></ul><ul class="uk-list uk-width-1-3@s"><li class="item-275 uk-h5"><span class="">About us</span>
+</li><li class="item-276"><a href="/blog" class=" el-link uk-link-muted uk-margin-remove-last-child">Blog</a></li><li class="item-278"><a href="/newsletter" class=" el-link uk-link-muted uk-margin-remove-last-child">Newsletter</a></li><li class="item-285"><a href="https://careers.limesurvey.org" class=" el-link uk-link-muted uk-margin-remove-last-child">Careers</a></li></ul><ul class="uk-list uk-width-1-3@s"><li class="item-313 uk-h5"><span class="">Open Source</span>
+</li><li class="item-303"><a href="https://community.limesurvey.org" class=" el-link uk-link-muted uk-margin-remove-last-child">Community</a></li><li class="item-325"><a href="https://forums.limesurvey.org" class=" el-link uk-link-muted uk-margin-remove-last-child">Forums</a></li><li class="item-326"><a href="https://manual.limesurvey.org/Development_overview" class=" el-link uk-link-muted uk-margin-remove-last-child">Developers</a></li><li class="item-327"><a href="https://translate.limesurvey.org" class=" el-link uk-link-muted uk-margin-remove-last-child">Translation</a></li>	</ul>
+</div>
+
+</div>
+
+                
+            
+        
+    
+</div>
+</div><div class="tm-grid-expand uk-child-width-1-1 uk-grid-margin" uk-grid>
+<div>
+    
+        
+            
+            
+                
+                    
+<div class="uk-margin uk-text-center" uk-scrollspy-class>    <div class="uk-child-width-auto uk-grid-large uk-flex-inline" uk-grid>
+            <div>
+<a class="el-link uk-link-muted" href="https://www.facebook.com/LimeSurvey/" rel="noreferrer"><span uk-icon="icon: facebook; width: 16; height: 16;"></span></a></div>
+            <div>
+<a class="el-link uk-link-muted" href="https://twitter.com/LimeSurvey" rel="noreferrer"><span uk-icon="icon: twitter; width: 16; height: 16;"></span></a></div>
+            <div>
+<a class="el-link uk-link-muted" href="https://www.linkedin.com/company/limesurvey" rel="noreferrer"><span uk-icon="icon: linkedin; width: 16; height: 16;"></span></a></div>
+            <div>
+<a class="el-link uk-link-muted" href="https://www.xing.com/companies/limesurveygmbh" rel="noreferrer"><span uk-icon="icon: xing; width: 16; height: 16;"></span></a></div>
+            <div>
+<a class="el-link uk-link-muted" href="https://github.com/LimeSurvey/LimeSurvey" rel="noreferrer"><span uk-icon="icon: github; width: 16; height: 16;"></span></a></div>
+    
+    </div></div><div class="uk-panel uk-text-small uk-margin uk-text-center" uk-scrollspy-class><p>Copyright © 2006-2021 LimeSurvey GmbH</p></div>
+                
+            
+        
+    
+</div>
+</div>
+                                </div>
+                
+            
+        
+    
+</div>
+</div>
+
+
+            <!-- Builder #footer -->
+        </div>
+
+                </div>
+        
+        
+
+    </body>
+</html>

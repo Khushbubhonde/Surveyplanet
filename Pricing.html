@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+}
+
+.logo{
+    margin-top: 40px;
+    margin-left: 40px;
+    padding:40px 250px;
+    position:relative;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: white;
+    color: black;
+}
+nav ul li{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
+    padding:10px;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+
+#btn{
+    border:1px solid black;
+    color: rgb(134, 192, 48);
+    padding: 10px 20px;
+    border-radius: 30px;
+    float:right;
+}
+#clb{
+    border:1px solid black;
+    color:white;
+    background-color: rgb(134, 192, 48);
+    padding: 10px 20px;
+    border-radius: 30px;
+    float:right;
+}
+
+.make li{
+    position:relative;
+    align-content: center;
+}
+nav ul li.break {
+    background-color: #31a647;
+    width: 1px;
+    height: 40px;
+    padding: 0 !important;
+    vertical-align: middle;
+    margin-left: 2rem;
+    margin-right: 0;
+}
+hr{
+    /* margin:30px; */
+    margin-top:50px;
+    width:100%; 
+    
+}
+.container{
+    height:98vh;
+    width:200vh;
+    padding: 20px;
+    background-image: url("price.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+    .simple{
+    margin:100px;
+    margin-left: 1000px;
+    /* border: 2px solid red; */
+    display:grid;
+    /* padding:20px; */
+    width:400px;
+    height:200px;
+    line-break: auto;
+
+}
+.simple h1{
+     color:rgb(102, 93, 93);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.simple h2{
+    color:rgb(203, 194, 194);
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo"><a href="index.html"><img src="https://www.limesurvey.org/images/limesurvey/svg/logo_limesurvey_head.svg" alt="This is logo"/></a></li>
+            <li class="make"><a href="Examples.html">Examples</a></li>
+            <li class="make"><a href="Pricing.html">Pricing & Features</a></li>
+            <li class="make"><a href="About.html">About</a></li>
+            <li class="make"><a href="Blog.html">Blog</a></li>
+            <li class="make"><a href="Help.html">Help</a></li>
+             <li class="break"></li>
+            <li id="btn" class="make"><a href="login.html">Login</a></li>
+            <li id="clb" class="make"><a href="signup.html">Sign up</a></li>
+        </ul>
+    </nav>
+    <hr>
+        <div class="container" >
+            <div class="simple">
+                <h1>Pricing and survey features</h1>
+                <h2>Hundreds of features to help you create the perfect survey.</h2>
+            </div>
+        </div>
+</body>
+</html>
